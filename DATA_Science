@@ -1,0 +1,14 @@
+"""
+学习pandas
+"""
+
+import pandas as pd
+import seaborn as sns
+
+anscombe = sns.load_dataset("anscombe")
+
+print(anscombe)
+
+exit()
+df = pd.read_csv("I:\\Python\\Study\\pandas_for_everyone-master\\data\\scientists.csv")
+print(df[df['Age']>df['Age'].mean()])
